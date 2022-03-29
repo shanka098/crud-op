@@ -1,0 +1,26 @@
+<html>
+<body>
+  <h1> Grocery inventory </h1>
+<table>
+  <thead>
+    <th>Product name</th>
+    <th>Product ID </th>
+    <th>Price</th>
+    <th>Quantity in hand</th>
+    <th>sold Quantity</th>
+    <th>Remaining stock</th>
+  </thead>
+  <tr>
+  {% for st in supermarket %}
+  <td> {{st.productname}}</td>
+  <td> {{st.productid}}</td>
+  <td> {{st.price}}</td>
+  <td> {{st.Quantityinhand}}</td>
+  <td> {{st.soldquantity}}</td>
+  <td> {{st.Remainingstock}}</td>
+  <td> <a href = '/update/{{st.id}}'> Update </a> <a href = '/delete/{{st.id}}'> Delete </a> </td>
+  </tr>
+  {% endfor %}
+</table>
+<a href='/Addlist'> <button type ="button"> ADD NEW LIST </button> </a>
+</body> 

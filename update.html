@@ -1,0 +1,17 @@
+<html>
+<body>
+  <h1> update Grocery list </h1>
+  <form method = 'POST'>
+  supermarket productname <input type = "text" name = "productname" value ="{{supermarket.productname}}">
+  supermarket productid <input type = "text" name = "productid" value ="{{supermarket.productid}}">
+  supermarket price <input type = "text" name = "price" value ="{{supermarket.price}}">
+  supermarket Quantityinhand <input type = "text" name = "Quantityinhand" value ="{{supermarket.Quantityinhand}}">
+  supermarket soldquantity <input type = "text" name = "soldquantity" value ="{{supermarket.soldquantity}}">
+  supermarket Remainingstock <input type = "text" name = "Remainingstock" value ="{{supermarket.Remainingstock}}">
+        {%csrf_token%}
+        <input type = 'submit' value= 'update list'>
+</form>
+</body>
+</html>
+
+  
